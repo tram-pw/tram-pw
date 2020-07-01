@@ -5,7 +5,7 @@ default: &default
   database: tram-pw
   pool: 5
   username: root
-  password: root
+  password: seiya0104
   socket: /var/lib/mysql/mysql.sock
   host: mysql-tram-pw.c28kjha8lmgn.ap-northeast-1.rds.amazonaws.com
 
