@@ -1,6 +1,8 @@
 # 概要
 
-フィットネス版KURASHIRU　※制作中  
+フィットネス版KURASHIRU  
+※現在、インフラ周りの整備中です  
+
 https://tram.pw
 
 # 使用技術
