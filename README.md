@@ -1,41 +1,28 @@
-# Ruby on Rails チュートリアルのサンプルアプリケーション
+# 概要
 
-これは、次の教材で作られたサンプルアプリケーションです。   
-[*Ruby on Rails チュートリアル*](https://railstutorial.jp/)
-[Michael Hartl](http://www.michaelhartl.com/) 著
+フィットネス版KURASHIRU　※制作中
+https://tram.pw
 
-## ライセンス
+# 使用技術
 
-[Ruby on Rails チュートリアル](https://railstutorial.jp/)内にある
-ソースコードはMITライセンスとBeerwareライセンスのもとで公開されています。
-詳細は [LICENSE.md](LICENSE.md) をご覧ください。
+Ruby 2.7.0
+Ruby on Rails 5.1.6
 
-## 使い方
+Mysql
+Unicorn
+Nginx
+AWS(VPC/EC2/ELB/ACM/RDS/Route53)
 
-このアプリケーションを動かす場合は、まずはリポジトリを手元にクローンしてください。
-その後、次のコマンドで必要になる RubyGems をインストールします。
+# 今後の実装予定
 
-```
-$ bundle install --without production
-```
+ユーザー機能(登録/削除/編集,ログイン/ログアウト,フォロー/フォロー解除,いいね/いいね解除,各種一覧)
+投稿機能(登録/編集/削除,工程,画像,動画,質問,レビュー)
+API投稿機能(外部から自動集約)
+タイマー機能
+ToDoリスト機能
+スケジュール登録機能
+検索機能
 
-その後、データベースへのマイグレーションを実行します。
-
-```
-$ rails db:migrate
-```
-
-最後に、テストを実行してうまく動いているかどうか確認してください。
-
-```
-$ rails test
-```
-
-テストが無事に通ったら、Railsサーバーを立ち上げる準備が整っているはずです。
-
-```
-$ rails server
-```
-
-詳しくは、[*Ruby on Rails チュートリアル*](https://railstutorial.jp/)
-を参考にしてください。
+Docker
+CircleCI/CD
+...
