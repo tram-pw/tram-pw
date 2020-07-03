@@ -12,6 +12,10 @@ gem 'turbolinks',     '5.0.1'
 gem 'jbuilder',       '2.7.0'
 gem 'mysql2', '>= 0.3.18', '< 0.6.0'
 
+group :production do 
+  gem 'unicorn'
+end
+
 group :development, :test do
   gem 'byebug',  '9.0.6', platform: :mri
   gem 'unicorn'
