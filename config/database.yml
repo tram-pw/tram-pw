@@ -2,11 +2,11 @@ default: &default
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: tram-pw
   pool: 5
-  username: root
-  password: 
-  host: localhost
+  database: <%= ENV['DB_NAME'] %>
+  username: <%= ENV['DB_USER'] %>
+  password: <%= ENV['DB_PSWD'] %>
+  host: <%= ENV['DB_HOST'] %>
 
 development:
   <<: *default
@@ -18,8 +18,8 @@ test:
 
 production:
   <<: *default
-  username: root
-  password: seiya0104
-  database: tram-pw_production
   socket: /var/lib/mysql/mysql.sock
-  host: mysql-tram-pw.c28kjha8lmgn.ap-northeast-1.rds.amazonaws.com
+  username: <%= ENV['DB_NAME'] %>
+  password: <%= ENV['DB_PSWD'] %>
+  database: <%= ENV['DB_NAME'] %>
+  host: <%= ENV['DB_HOST'] %>
