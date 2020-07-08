@@ -19,7 +19,7 @@ test:
 production:
   <<: *default
   socket: /var/lib/mysql/mysql.sock
-  username: <%= ENV['DB_NAME'] %>
-  password: <%= ENV['DB_PSWD'] %>
   database: <%= ENV['DB_NAME'] %>
+  username: <%= ENV['DB_USER'] %>
+  password: <%= ENV['DB_PSWD'] %>
   host: <%= ENV['DB_HOST'] %>
